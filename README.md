@@ -1,2 +1,2 @@
-# BaffledWhiskey.github.io
+# BaffledWhisky.github.io
 website for SEPR
