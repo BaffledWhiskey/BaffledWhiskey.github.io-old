@@ -19,9 +19,7 @@ html, body{
 .nav-link{
   font-size: 1.1em !important;
 }
-.fa-shopping-basket{
-  font-size: 1.5em;
-}
+
 .carousel-inner img{
   width: 100%;
   height: 100%;
@@ -36,6 +34,14 @@ html, body{
   text-transform: uppercase;
   text-shadow: 1px 1px 15px #000;
 }
+
+.img-fluid{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .carousel-caption h3{
   font-size: 200%;
   font-weight: 500;
@@ -96,6 +102,18 @@ html, body{
 .fa-instagram:hover{
   color: #d5d5d5;
 }
+
+.fa-pastafarianism{
+  font-size: 4em;
+  margin: 1rem;
+}
+
+.fa-user-astronaut{
+  font-size: 4em;
+  margin: 1rem;
+}
+
+
 footer{
   background-color: #3f3f3f;
   color: #d5d5d5;
