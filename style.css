@@ -48,6 +48,10 @@ html, body{
   text-shadow: 1px 1px 10px #000;
   padding-bottom: 1rem;
 }
+.infoText{
+    font-size: 2em;
+    padding-bottom: 2rem;
+}
 .jumbotron{
   padding: 1rem;
   border-radius: 0;
@@ -150,6 +154,7 @@ hr.light-100{
 
 
 
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
     .social a{
@@ -175,6 +180,9 @@ hr.light-100{
   }
   .display-4 {
     font-size: 200%;
+  }
+  .display-5 {
+      font-size: 110%;
   }
   .social a{
     font-size: 2.5em;
