@@ -82,11 +82,21 @@
 <div class="container-fluid">
 	<div class="row jumbotron">
 		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-			<p class="lead">Kroy is the first title in our game saga</p>
+			<p class="lead">Find all the assessment documents here</p>
 		</div>
 	<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-		<a href="./Assessment 1.html"><button type="button" class="btn btn-outline-secondary btn-lg">
-		Latest Release</button></a>
+		<div class="dropdown show">
+  			<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    			Assessments
+  			</a>
+
+  			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    			<a class="dropdown-item" href="./Assessment 1.html">Assessment 1</a> 
+    			<a class="dropdown-item" href="#">Assessment 2</a>
+    			<a class="dropdown-item" href="#">Assessment 3</a>
+				<a class="dropdown-item" href="#">Assessment 4</a>
+  			</div>
+		</div>
 	</div>
 </div>
 </div>
@@ -94,11 +104,15 @@
 <div class="container-fluid padding">
 	<div class="row welcome text-center">
 		<div class="col-12" id="LearnMore">
-			<h1 class="display-4">Perfectly Engineered</h1>
+			<div class="hideme">
+				<h1 class="display-4">Perfectly Engineered</h1>
+			</div>
 		</div>
 		<hr>
 		<div class="col-12">
-			<p class="lead">Kroy promises to be one of the greatest games of 2020</p>
+			<div class="hideme">
+				<p class="lead">Kroy promises to be one of the greatest games of 2020</p>
+			</div>
 		</div>
 	</div>
 </div>
@@ -106,24 +120,31 @@
 <!--- Three Column Section -->
 
 <div class="container-fluid padding">
+	
 	<div class="row text-center padding">
 		<div class="col-xs-12 col-sm-6 col-md-4">
-			<i class="fas fa-code"></i>
-			<h3>Programming</h3>
-			<p>Our entire project will be written in Java</p>
+			<div class ="hideme">
+				<i class="fas fa-code"></i>
+				<h3>Programming</h3>
+				<p>Our entire project will be written in Java</p>
+			</div>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-4">
-			<i class="fas fa-code-branch"></i>
-			<h3>Teamwork</h3>
-			<p>Working well together is a central focus of our team</p>
+			<div class="hideme">
+				<i class="fas fa-code-branch"></i>
+				<h3>Teamwork</h3>
+				<p>Working well together is a central focus of our team</p>
+			</div>
 		</div>
 		<div class="col-sm-12 col-md-4">
-			<i class="fas fa-bug"></i>
-			<h3>Bugfixes</h3>
-			<p>It is often said that programming is actually only 10% programming and 90% bugfixing</p>
+			<div class="hideme">
+				<i class="fas fa-bug"></i>
+				<h3>Bugfixes</h3>
+				<p>It is often said that programming is actually only 10% programming and 90% bugfixing</p>
+			</div>
 		</div>
+	
 	</div>
-
 </div>
 
 
@@ -179,7 +200,37 @@
 	</div>
 </div>
 </footer>
-<script type="text/javascript">
+<script>
+	$.wait = function(ms) {
+    	var defer = $.Deferred();
+    	setTimeout(function() { defer.resolve(); }, ms);
+    	return defer;
+	};
+
+	$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                
+                $(this).delay(100).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
 </script>
 
 </body>

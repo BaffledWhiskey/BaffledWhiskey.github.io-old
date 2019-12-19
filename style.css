@@ -4,6 +4,10 @@ html{
   scroll-behavior: smooth;
 }
 
+.hideme{
+    opacity: 0;
+}
+
 html, body{
   height: 100%;
   width: 100%;
@@ -33,6 +37,10 @@ html, body{
   font-size: 500%;
   text-transform: uppercase;
   text-shadow: 1px 1px 15px #000;
+}
+
+.lead{
+    font-size: 150%;
 }
 
 .img-fluid{
@@ -70,15 +78,7 @@ html, body{
   margin-top: .3rem;
   margin-bottom: 3rem;
 }
-.fa-forumbee{
-  color: #ffff00;
-}
-.fa-leaf{
-  color: #2d572c;
-}
-.fa-smile{
-  color: #ffa500;
-}
+
 .fa-code{
   font-size: 4em;
   margin: 1rem;
