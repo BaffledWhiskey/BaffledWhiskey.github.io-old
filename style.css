@@ -8,12 +8,19 @@ html{
     opacity: 0;
 }
 
+body{
+    position: relative;
+}
+
 html, body{
   height: 100%;
   width: 100%;
   font-family: 'Poppins', sans-serif;
   color: #222;
 }
+
+
+
 .navbar{
   padding: .8rem;
 }
@@ -188,6 +195,9 @@ hr.light-100{
     font-size: 2.5em;
     padding: 1.2rem;
   }
+  .col-4{
+      font-size: 0.8em;
+  }
 }
 @media (max-width: 576px) {
   .carousel-caption{
@@ -212,6 +222,9 @@ hr.light-100{
   .social a{
     font-size: 2em;
     padding: .7rem;
+  }
+  .col-4{
+      font-size: 0.7em;
   }
 
 }
