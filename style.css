@@ -224,14 +224,22 @@ hr.light-100{
     padding: .7rem;
   }
   .mainContent{
-      font-size: 0.2em;
+      font-size: 0.6em;
   }
   .mainContent h4{
-      font-size: 0.2em;
+      font-size: 1.5em;
   }
-  .mainContent a{
-      font-size: 0.4em;
-  }
+
+.mainContent h5{
+    font-size: 1.3em;
+}
+.mainContent a{
+    font-size: 1.4em;
+}
+
+.AHeader h3{
+    font-size: 1.5em;
+}
 
 }
 
