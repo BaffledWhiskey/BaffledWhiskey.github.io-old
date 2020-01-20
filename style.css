@@ -23,6 +23,9 @@ html, body{
 }
 
 
+.additionalDocs{
+    padding-top: 1rem;
+}
 
 .navbar{
     padding: 0.8rem;
